@@ -1,0 +1,67 @@
+ git add  # from working to stagin area
+ -------
+
+git add <filename>
+
+
+#----
+ git branch
+ ----------
+git branch
+git branch -v
+git branch <branch-name>
+
+#----
+
+
+ git checkout
+ ------------
+git checkout <thirsty>
+git checkout master
+
+ git commit # staging area to local repo
+ ----------
+git commit -m <filename>
+
+ git clone # copy or clone remote directory to local machine
+ #--------
+
+# git fetch # remote repo to local repo
+do git merge to get to working dir
+
+#----
+ git init
+ --------
+
+git init  # creates .git folder
+
+#----
+
+ git log
+ -------
+
+git log
+
+#----
+ git merge
+ ----------
+
+git merge thirsty
+
+#---
+git push # local repo to remote repo
+
+git pull  # remote repo to local repo and working dir
+(git pull :: git fetch _ git merge)
+
+--------
+#----
+
+ git rebase
+ ----------
+
+git rebase <branchname>
+
+#----
+
+
