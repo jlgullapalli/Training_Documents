@@ -1,0 +1,263 @@
+Edu_MLOps Certification Training
+
+		
+#########################
+Day - 4 | 8th Feb. 2026
+#########################			 
+		
+
+
+	- git stash :::
+		
+		 - Used to maintain the uncommited changes to a temporary area.
+		 
+		 - Stash is List Data Structure 
+		 
+		 
+		 
+		 git stash list 
+		 
+		 git stash save "create from w1.txt"
+		 
+		 git stash apply 				# Apply the latest changes back to staging area 
+		 
+		 git stash apply stash@{3}		# Apply the specific change back to staging area 
+		 
+		 git stash drop 				# Delete the latest changes from the stash list
+		 
+		 git stash drop stash@{3}		# Delete the specific changes from the stash list
+		 
+		 git stash pop 					# Apply and delete the lastest changes
+		 
+		 git stash pop stash@{2}		# Apply and delete a specific change
+		 
+		 git stash clear 				# Clean-up the entire stash list
+		 
+
+
+	- github remote repos ::::
+	
+		- github :
+		
+		- gitlab/azRepos :
+		
+		
+		Developers' Workload :
+		
+		- Enhancement/Bugfix Project
+		- New Product development
+		
+		
+		- git clone / git push / git fetch / pull
+		
+		
+		
+		- Pull Request :::
+		
+			- Created by the Developers 
+			- It is used to merge the changes to main/master branch 
+		
+		
+		- ML Project :
+		
+			- Tuning the Model 
+		
+		
+		
+		Git Cli Commands :::
+			
+			git clone 		-> To Copy/Clone the entire remote repository to Local Machine
+			
+			git add 		-> To Add the changes from working directory to staging area 
+			
+			git commit 		-> To Commit the changes from staging area to local repository
+			
+			git push		-> To Push the changes from local Repository to Remote Repository
+		
+			git fetch/pull :
+			
+				-> Both Git fetch and pull are used handle the incremental changes from remote repository.
+				
+				Git fetch :
+				
+					- It is used to just check for the incremental changes from remote repository, if any incremental changes exist, it will update the details of the changes only in local repository. Git fetch will never Update the Working Directory.
+					
+					- Do explicit merge to update the Working Directory					
+					
+			
+				git Pull :
+				
+					- It is used to check for the incremental changes from remote repository, if any incremental changes exist, it will update the details of the changes in local repository as well as in the Working Directory.
+					
+					git pull => git fetch + git merge 
+					
+					To keep the local repo in sync with remote repo.
+					
+		
+		- git remote -v
+		
+		- git clone <Repo_URL>
+		
+			- git clone https://github.com/Edu-MLOps-Feb26/TestRemoteRepo1.git		
+		
+		- git push 
+		
+			- git push -u origin localfeature1
+			
+			- Remote repo is needs token based authentication to push the changes 
+			
+			- Password based 
+			
+			- Token based : asdadasdao
+			
+	
+		- git remote -v 			# To list the remote repos that are linked to local repo
+			
+		- git remote add origin https://github.com/Edu-MLOps-Feb26/TestRemoteRepo1.git		# To Add remote repo to local 
+		
+		- git remote remove origin 	# Remove remote repo link
+		
+		
+	- VS Code :::
+	
+		-> Install VS Code 
+		
+		-> AWS Free Tier Account 
+		
+			- Login to AWS Account 
+			
+			- Create EC2 instance ==> Build Enviroment to Build the ML Project using git-actions CI
+			
+
+		
+		
+		
+	- AWS Console :::
+
+		- root user ID 
+		
+		- Password 
+		
+		- MFA 
+
+			- Login to AWS Console as a root user 
+			
+			- Create IAM User user profile with Admin Access
+			
+		
+			
+		
+		
+			- AWS S3 Buckets -> To manage the ML Datasets 
+		
+	S3 Buckets :::
+	
+	
+		--> Bucket = Directory
+		
+			--> Files -> Keys/ Objects
+			
+		--> Access to Create a S3 Bucket 	
+		
+		--> Create s3 Bucket 		--> loksai-edu-mlops-0208-bk
+
+Set S3 Bucket Policy :
+		
+{
+  "Version": "2012-10-17",
+  "Statement": [
+	{
+	  "Sid": "Statement1",
+	  "Effect": "Allow",
+	  "Principal": "*",
+	  "Action": [
+		"s3:*"
+	  ],
+	  "Resource": "arn:aws:s3:::loksai-edu-mlops-0208-bkt/*"
+	}
+  ]
+}		
+	
+		--> IAM Role to Access S3 Bucket using EC2 Instances (VM)	
+		
+		https://loksai-edu-mlops-0208-bkt.s3.ap-south-1.amazonaws.com/index.html
+		
+		
+		
+	Working with AWS Cli Commands to enable Process Automation :
+	
+	
+	- Create IAM Role 		# It is used to give permission to EC2 Instance to access s3 Bucket 
+							# loksai-edu-mlops-0208-role
+							
+	- Create EC2 Instance 	# loksai-edu-mlops-0208-Dev_Server
+		-> Linux - ami: ubuntu 22.04v
+		
+		
+		Authentication Methods/Types:
+		
+			- Password based Authentication
+			- Token based Authentication		cli/api
+			
+			- Key Based Authentication
+				- Public Key 
+				- Private Key 
+				
+			- Passwordless Authentication
+			
+			
+			Free-Tier Account --> 100$
+			
+			1 VM --> 750 Hrs/Month 
+			
+			10 VMs --> 75 Hrs/Month
+	
+	
+	- Connect to EC2 Instance :
+	
+		-> EC2 Instance Connect 	==> Web Browser 
+		
+		-> SSH Agents :			# Windows Users 
+			- Putty 
+			- MobaXterm 
+				--> Install MobaXterm Package
+				https://mobaxterm.mobatek.net/download-home-edition.html
+			
+		-> Terminal/cmd				# Mac/Linux/Windows Users
+				Open an Terminal.
+
+				Locate your private key file. The key used to launch this instance is AWS_MLOps_KeyPair.pem
+
+				Run this command, if necessary, to ensure your key is not publicly viewable.
+				chmod 400 "AWS_MLOps_KeyPair.pem"
+
+				Connect to your instance using its Public DNS:
+				ec2-65-2-6-239.ap-south-1.compute.amazonaws.com		
+				
+				ssh -i "AWS_MLOps_KeyPair.pem" ubuntu@ec2-65-2-6-239.ap-south-1.compute.amazonaws.com
+		
+			Connection Parameters :
+				Host_Name 			==> Public IP Address
+				User_Name 			==> ubuntu
+				Credential 
+					- SSH Key ==> *.pem
+			
+		
+Next ::
+
+	-> ML Project :::
+	
+	-> MLOPS Workflow :
+	
+	-> Python --> 
+	
+		- Web Application			==> User Interface 
+		- API 						==> Backend
+		
+		-> github, s3 bucket 
+		
+	-> Containerization :
+	
+		- Docker 
+		
+		- Kubernetes 

@@ -1,0 +1,314 @@
+  sort dd |uniq -u
+  246  sort dd |uniq -d
+  247  sort dd |uniq -dc
+  248  sort dd |uniq -uc
+  249  tr -s "abcsssddd"
+  250  tr -s "s" "abcsssddd"
+  251  echo "abcsssddd" | tr "s"
+  252  echo "abcsssddd" | tr -s "s"
+  253  echo "abcsssddd" | tr -d "s"
+  254  echo "abcsssddd" | tr -t  "abs"
+  255  echo "abcsssddd" | tr -t "abs"
+  256  echo "abcsssddd" | tr -t  [abs]
+  257  tr --help
+  258  echo "abcsssddd" | tr :upper:
+  259  echo "abcsssddd" | tr [:upper:]
+  260  cat aa | tr "[:lower:]" "[:upper:]"
+  261  tr -cd "[:digit:] aa
+  262  tr -cd "[:digit:]" aa
+  263  cat aa | tr -cd "[:digit:]"
+  264  cat aa
+  265  cat aa
+  266  cat aa | cut -d1
+  267  cat aa | cut -d" "
+  268  cat aa | cut -d" " f1
+  269  cat aa | cut -d" " -f1
+  270  cat aa | cut -d" " -f2
+  271  vi aa
+  272  cat aa | cut -d" " -f1,3
+  273  cat aa | cut -d" " -f1,3 | paste -d","
+  274  cat aa
+  275  cat bb
+  276  paste -d"," aa bb
+  277  cat aa | tr " " ","
+  278  grep -f1 aa
+  279  cat aa
+  280  man grep
+  281  grep -a abc *
+  282  grep -f -a abc *
+  283  cat aa | awk "print $1"
+  284  cat aa | awk "{print $1}"
+  285  cat aa | awk -F" " "{print $1}"
+  286  cat aa | awk -F" " '{print $1}'
+  287  cat aa | awk -F"1" '{print $1}'
+  288  cat aa | awk -F"1" '{print $1,$2}'
+  289  cat aa | awk -F"1" '{print $1","$2}'
+  290  cat aa | awk -F" " '{print $1","$2}'
+  291  cat aa | awk '{BEGIN {print "Contents of file"}'
+  292  cat aa | awk 'BEGIN {print "Contents of file"}'
+  293  cat aa | awk 'BEGIN {print "Contents of file"}'
+  294  cat aa | awk 'BEGIN {print "Contents of file"}
+  295  {print $0}
+  296  END {print "File footer"
+  297  }'
+  298  grep [:upper:] aa
+  299  grep [:lower:] aa
+  300  grep [[:lower:]] aa
+  301  grep [[:upper:]] aa
+  302  grep "^a" aa
+  303  grep "r$" aa
+  304  ssh 1.1.1.10
+  305  cat abc
+  306  cat aa
+  307  vi aa
+  308  grep "^..$"
+  309  grep "^..$" aa
+  310  grep "^...$" aa
+  311  vi aa
+  312  cat aa
+  313  grep "y{1,2}" aa
+  314  grep "y{1,4}" aa
+  315  grep "y{1,3}" aa
+  316  grep "*y{1,3}*" aa
+  317  grep "*y{1}*" aa
+  318  cat aa
+  319  grep ".*y{1}.*" aa
+  320  grep ".*y{1,2}.*" aa
+  321  grep "y{2,}" aa
+  322  grep 'y{2,}' aa
+  323  egrep 'y{2,}' aa
+  324  egrep 'xy{2,}z' aa
+  325  egrep 'xy{1,}z' aa
+  326  grep "." aa
+  327  grep "?" aa
+  328  grep "[0-9]2" aa
+  329  egrep "[0-9]{2}" aa
+  330  egrep "[0-9]{5}" aa
+  331  egrep "[0-9]{3}" aa
+  332  exit
+  333  git --version
+  334  ls
+  335  cd
+  336  cd Edu_MLOps_Feb2026_projects/
+  337  ls
+  338  cd repo1/
+  339  ls
+  340  git config
+  341  git config --global
+  342  dir
+  343  ped
+  344  pwd
+  345  mkdir Edu_MLOps_Feb2026_projects
+  346  cd Edu_MLOps_Feb2026_projects/
+  347  mkdir repo1
+  348  cd repo1/
+  349  git init
+  350  ls -l
+  351  ls -al
+  352  cd .git
+  353  ls
+  354  cd ..
+  355  cd python_scr/
+  356  git status
+  357  git init
+  358  ls
+  359  git ls-files
+  360  git add .
+  361  git commit -m "adding python scripts"
+  362  git config --global user.email "jlgullapalli@gmail.com'
+  363  git config --global user.name "janaki"
+  364  git commit -m "adding python scripts"
+  365  git push
+  366  git status
+  367  git add .
+  368  git commit -m "adding python scripts"
+  369  git push
+  370  git config --global user.name "jlgullapalli"
+  371  git status
+  372  git ls-files
+  373  ls
+  374  ls
+  375  git status
+  376  git commit -m "adding python scripts"
+  377  git config --global user.email "jlgullapalli@gmail.com"
+  378  git config --global user.name "jlgullapalli"
+  379  git commit -m "adding python scripts"
+  380  git status
+  381  git push
+  382  git push origin main
+  383  git push -u origin main
+  384  git add Readme.md
+  385  vi Readme.md
+  386  git add Readme.md
+  387  git commit -m "first commit"
+  388  git branch -m main
+  389  git remote add origin https://github.com/jlgullapalli/python_scripts.git
+  390  git push -u origin main
+  391  git config
+  392  git config --global user.email "jlgullapalli@gmail.com"
+  393  git login
+  394  git --help
+  395  git push -u origin main
+  396  git push -u origin main
+  397  git config --global user.name "jlgullapalli@gmail.com"
+  398  git push -u origin main
+  399  cd Edu_MLOps_Feb2026_projects/
+  400  ls
+  401  cd repo1/
+  402  ls
+  403  git staus
+  404  git status
+  405  echo "res" >f1.txt
+  406  ls
+  407  git status
+  408  git init
+  409  git status
+  410  git ls-files
+  411  git aff f1.txt
+  412  git add f1.txt
+  413  git status
+  414  git commit -m "created f1.txt"
+  415  git ls-files
+  416  git log
+  417  git log f1.txt
+  418  echo "res" >f2.txt
+  419  git status
+  420  git add f2.txt
+  421  git commit -m "second file"
+  422  git log
+  423  cd python_scr/
+  424  git status
+  425  git status
+  426  ls
+  427  ls -al
+  428  exho "# python scripts" > Readme.md
+  429  git add Readme.md
+  430  git commit -m "first commit"
+  431  git branch -M main
+  432  git remote add origin https://github.com/jlgullapalli/python_scripts.git
+  433  git push -u origin main
+  434  sudo
+  435  su
+  436  git remote status
+  437  git remote
+  438  git remote origin
+  439  git remote origin -v
+  440  git status
+  441  ls
+  442  git add Readme.md
+  443  git commit -m Readme.md
+  444  git commit -m "first commit"
+  445  git push
+  446  git push --set-ustream origin main
+  447  git push --set-upstream origin main
+  448  git push --set-upstream origin main
+  449  cd python_scr/
+  450  ls
+  451  git status
+  452  git remote add origin
+  453  git remote add origin
+  454  On branch main
+  455  nothing to commit, working tree clean
+  456  git remote add origin https://github.com/jlgullapalli/python_scriipts
+  457  git remote remove origin
+  458  git remote add origin https://github.com/jlgullapalli/python_scriipts
+  459  ls
+  460  git add Readme.md
+  461  git commit Readme.md
+  462  git push
+  463   git push --set-upstream origin main
+  464  git remote add origin https://github.com/jlgullapalli/python_scriipts.git
+  465  git remote remove origin
+  466  git remote add origin https://github.com/jlgullapalli/python_scriipts.git
+  467  got pull
+  468  git pull
+  469  gh auth login
+  470  git auth login
+  471  git --help
+  472  git login
+  473  git pull
+  474  git config
+  475  git --config
+  476  git config
+  477  git config --global
+  478  git config --get-all
+  479  git config
+  480  git config --list
+  481  git config --global user.name="jlgullapalli@gmail.com"
+  482  git config --global user.email="jlgullapalli@gmail.com"
+  483  git config --list
+  484  git pull
+  485  cd python_scr/
+  486  git push origin master
+  487  git pull origin master
+  488  git branch
+  489  git pull origin main
+  490  cd python_scr/
+  491  git pull
+  492  git pull remote origin
+  493  git pull origin main
+  494  ls
+  495  rm Readme.md
+  496  git pull origin main
+  497  git add 2__private_method.py
+  498  git commit -m "push"
+  499  git push origin main
+  500  git push --help
+  501  cd
+  502  cd Edu_MLOps_Feb2026_projects/
+  503  mkdir TestRemoteRepo1
+  504  git clone https://github.com/jlgullapalli/TestRemoteRepo1.git
+  505  git status
+  506  git init
+  507  git clone https://github.com/jlgullapalli/TestRemoteRepo1.git
+  508  rmdir TestRemoteRepo1/
+  509  rm -rf TestRemoteRepo1/
+  510  git clone https://github.com/jlgullapalli/TestRemoteRepo1.git
+  511  ls
+  512  cd TestRemoteRepo1/
+  513  ls
+  514  git status
+  515  git remote -v
+  516  git log -v
+  517  git switch -f localfeature1
+  518  git log --oneline
+  519  exho rec` >>local.txt
+git add .
+git commit -m "local.txt
+git push -u origin localfeature1
+git remote -v
+git branch
+exho rec` >>local.txt
+  520  git add .
+  521  git commit -m "local.txt
+git push -u origin localfeature1
+git remote -v
+git branch
+git switch -c localfeature1
+git branch
+git commit -m "local.txt
+  522  git push -u origin localfeature1
+  523  git remote -v
+  524  git branch
+  525  git switch -c localfeature1
+  526  git branch
+  527  exho rec` >>local.txt
+git add .
+git commit -m "local.txt
+git push -u origin localfeature1
+git remote -v
+git branch
+echo rec` >>local1.txt
+  528  exho rec` >>local.txt
+git add .
+git commit -m "local.txt
+git push -u origin localfeature1
+git remote -v
+echo rec` >>local1.txt
+  529  echo rec2 >local2.text
+  530  git add .
+  531  git commit -m "loval1"
+  532  git push -u origin localfeature1
+  533  history
+
+

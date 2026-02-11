@@ -1,0 +1,199 @@
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~
+$ cd
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~
+$ cd Edu_MLOps_Feb2026_projects/
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects
+$ mkdir TestRemoteRepo1
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects
+$ git clone https://github.com/jlgullapalli/TestRemoteRepo1.git
+Cloning into 'TestRemoteRepo1'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 8 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (8/8), 4.54 KiB | 4.54 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects
+$ git init
+Initialized empty Git repository in C:/Users/jlgul/Edu_MLOps_Feb2026_projects/.git/
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects (master)
+$ git clone https://github.com/jlgullapalli/TestRemoteRepo1.git
+fatal: destination path 'TestRemoteRepo1' already exists and is not an empty directory.
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects (master)
+$ rmdir TestRemoteRepo1/
+rmdir: failed to remove 'TestRemoteRepo1/': Directory not empty
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects (master)
+$ rm -rf TestRemoteRepo1/
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects (master)
+$ git clone https://github.com/jlgullapalli/TestRemoteRepo1.git
+Cloning into 'TestRemoteRepo1'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 8 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (8/8), 4.54 KiB | 4.54 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects (master)
+$ ls
+TestRemoteRepo1/  repo1/
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects (master)
+$ cd TestRemoteRepo1/
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (main)
+$ ls
+README.md  testfile.txt
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (main)
+$ git remote -v
+origin  https://github.com/jlgullapalli/TestRemoteRepo1.git (fetch)
+origin  https://github.com/jlgullapalli/TestRemoteRepo1.git (push)
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (main)
+$ git log -v
+commit 76be424350985aac20da6fee3cdc5899ca92888f (HEAD -> main, origin/main, origin/HEAD)
+Merge: b16bf6c 2ff5da5
+Author: jlgullapalli <jlgullapalli@gmail.com>
+Date:   Sat Feb 7 20:00:17 2026 -0600
+
+    Merge pull request #1 from jlgullapalli/feature1
+
+    Rel2006: Add testfile.txt with initial content
+
+commit 2ff5da55295576c246452281be5ab073683da0f4
+Author: jlgullapalli <jlgullapalli@gmail.com>
+Date:   Sat Feb 7 19:54:12 2026 -0600
+
+    Add testfile.txt with initial content
+
+commit b16bf6c2722f3eaf5d7257525243b766344d082f
+Author: jlgullapalli <jlgullapalli@gmail.com>
+Date:   Sat Feb 7 19:48:24 2026 -0600
+
+    Initial commit
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (main)
+$ git switch -f localfeature1
+fatal: invalid reference: localfeature1
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (main)
+$ git log --oneline
+76be424 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #1 from jlgullapalli/feature1
+2ff5da5 Add testfile.txt with initial content
+b16bf6c Initial commit
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (main)
+$ exho rec` >>local.txt
+> git add .
+> git commit -m "local.txt
+> git push -u origin localfeature1
+> git remote -v
+> git branch
+> exho rec` >>local.txt
+git add .
+git commit -m "local.txt
+git push -u origin localfeature1
+git remote -v
+git branch
+bash: command substitution: line 3: unexpected EOF while looking for matching `"'
+bash: command substitution: line 8: syntax error: unexpected end of file
+bash: exho: command not found
+> git switch -c localfeature1
+> git branch
+> git commit -m "local.txt
+git push -u origin localfeature1
+git remote -v
+git branch
+git switch -c localfeature1
+git branch
+[main bce892f] local.txt git push -u origin localfeature1 git remote -v git branch git switch -c localfeature1 git branch git commit -m local.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 local.txt
+error: src refspec localfeature1 does not match any
+error: failed to push some refs to 'https://github.com/jlgullapalli/TestRemoteRepo1.git'
+origin  https://github.com/jlgullapalli/TestRemoteRepo1.git (fetch)
+origin  https://github.com/jlgullapalli/TestRemoteRepo1.git (push)
+* main
+Switched to a new branch 'localfeature1'
+* localfeature1
+  main
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (localfeature1)
+$ exho rec` >>local.txt
+git add .
+git commit -m "local.txt
+git push -u origin localfeature1
+git remote -v
+git branch
+echo rec` >>local1.txt
+bash: command substitution: line 3: unexpected EOF while looking for matching `"'
+bash: command substitution: line 8: syntax error: unexpected end of file
+bash: exho: command not found
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (localfeature1)
+$ exho rec` >>local.txt
+git add .
+git commit -m "local.txt
+git push -u origin localfeature1
+git remote -v
+echo rec` >>local1.txt
+bash: command substitution: line 3: unexpected EOF while looking for matching `"'
+bash: command substitution: line 7: syntax error: unexpected end of file
+bash: exho: command not found
+
+
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (localfeature1)
+$ echo rec2 >local2.text
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (localfeature1)
+$ git add .
+warning: LF will be replaced by CRLF in local2.text.
+The file will have its original line endings in your working directory
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (localfeature1)
+$ git commit -m "loval1"
+[localfeature1 8320263] loval1
+ 2 files changed, 1 insertion(+)
+ create mode 100644 local1.txt
+ create mode 100644 local2.text
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (localfeature1)
+$ git push -u origin localfeature1
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 611 bytes | 611.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'localfeature1' on GitHub by visiting:
+remote:      https://github.com/jlgullapalli/TestRemoteRepo1/pull/new/localfeature1
+remote:
+To https://github.com/jlgullapalli/TestRemoteRepo1.git
+ * [new branch]      localfeature1 -> localfeature1
+Branch 'localfeature1' set up to track remote branch 'localfeature1' from 'origin'.
+
+jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (localfeature1)

@@ -1,0 +1,30 @@
+
+git clone https://github.com/jlgullapalli/TestRemoteRepo1.git
+ls
+
+git status
+
+git remote -v
+
+git log -v
+
+git log --oneline
+
+git add .
+git commit -m "local.txt
+git push -u origin localfeature1
+git remote -v
+git branch
+git switch -c localfeature1
+git branch
+git commit -m "local.txt
+git push -u origin localfeature1
+git remote -v
+git branch
+git switch -c localfeature1
+git branch
+
+echo rec2 >local2.text
+git add .
+git commit -m "loval1"
+git push -u origin localfeature1

@@ -1,0 +1,411 @@
+Edu_MLOps Certification Training
+
+		
+#########################
+Day - 1 | 31st Jan. 2026
+#########################
+
+	MLOPs Essentials :::
+	
+	Lab Requirements :::
+	
+	Pre-requisites :::
+	
+	What is MLOps ???
+	
+	What is DevOps ???
+	
+	SDLC ? Software Development Life Cycle!
+	
+	Types of Software Applications?
+	
+		- Web Applications
+		- Mobile Applications
+		- Desktop Applications
+		- Embedded Applications 
+		- ML Applications
+		
+	Stages of SDLC :
+	
+		- Requirements Analysis 
+		- Design/Documentation
+		- Code/Development
+		- Test
+		- Implement to Prod 
+		- Monitor/Maintain
+	
+	Waterfall Model :
+	
+		- It is based on Top-Approach
+		- It used Linear path to engage all the stages of SDLC
+		- Waterfall Model was meant for Monolith Application Architecture
+			- Tightly Coupled
+		
+		
+		
+	
+		- Requirements Analysis 
+		- Design/Documentation
+		- Code/Development
+		- Test
+		- Implement to Prod 
+		- Monitor/Maintain	
+	
+	Eg.: Desktop Applications: SuperMarket Billing System 
+	
+		using Waterfall Model:
+		
+			SuperMarket Billing System :
+				- Stock Maintain
+				- Application User Interface Design 
+				- Billing 
+				- Payment 
+					- CASH/CARD 
+					- Online Payment/UPI		New Change
+
+	Core Project:
+	
+		- Requirements Analysis 		--> 12 Months 
+		- Design/Documentation
+		- Code/Development							5th Month 
+		- Test
+		- Implement to Prod 
+		- Monitor/Maintain		
+	
+	
+	Enhancement Project:
+	
+		- Requirements Analysis 		--> 12 Months 
+		- Design/Documentation
+		- Code/Development							5th Month 
+		- Test
+		- Implement to Prod 
+		- Monitor/Maintain	
+	
+	
+	AGILE Methodologies :
+	
+		--> Here the functions/Modules are defined as Iterations.
+		--> Each Iteration will be independently analysed and implemented.
+		--> Supports Monolith & Micro-Service based Application Architecture
+		--> It based on Task based approach.
+
+		
+	Stages of SDLC :
+
+	Eg.: Desktop Applications: SuperMarket Billing System 
+	
+		using AGILE Methodologies:
+		
+			SuperMarket Billing System :
+				- Stock Maintain
+				- Application User Interface Design 
+				- Billing 
+				- Payment 
+					- CASH/CARD 
+					
+					- Online Payment/UPI		New Change
+
+	Iteration 1 : Stock Maintain
+	
+		- Requirements Analysis 
+		- Design/Documentation
+		- Code/Development
+		- Test
+		- Implement to Prod with proper approvals
+	
+	
+	Iteration 2 : Application User Interface Design 
+	
+		- Requirements Analysis 
+		- Design/Documentation
+		- Code/Development
+		- Test
+		- Implement to Prod with proper approvals	
+	
+	
+	Iteration 3 : Payment 
+	
+		- Requirements Analysis 
+		- Design/Documentation
+		- Code/Development
+		- Test  100% 
+		- Implement to Prod with proper approvals	
+	
+	
+	Iteration nth : Online Payment/UPI
+	
+		- Requirements Analysis 
+		- Design/Documentation
+		- Code/Development
+		- Test
+		- Implement to Prod with proper approvals	
+		
+		
+		
+		- using AGILE Methodologies, we can able achieve :
+		
+			- Continuous Development
+			- Continuous Integration 
+			- Continuous Testing 
+			- Continuous Delivery 
+				- It is a process to release to changes to Prod Enviroment, This process expects Manual approvals for Prod release.
+				
+			
+		- But, using AGILE Methodologies, we cannot achieve :
+		
+			- Continuous Deployment 
+				- It is a process to release to changes to Prod Enviroment, This process Never expects any Manual intervension/approvals for Prod release.
+				
+				
+	- Devops :::::
+	
+	- What is DevOps ???	
+
+		--> DevOps is Software Development Strategy, which helps to promote the collaboration between the teams like Development Teams and Operations Teams in order to achieve Continuous Development, Continuous Integration, Continuous Testing, Continuous Delivery, Continuous Deployment and Continuous Monitoring in more automated fashion. 
+		
+	- How to Implement DevOps ???
+	
+		--> Identify the Teams involved in the overall SDLC process :::
+		
+			- DevOps Team ==> 
+			
+				- Infra-Structure Management Team
+				- Application Development Team 
+				- Testing Team 
+				- Release Management Team 
+				- Production Support Team 
+				- Production Monitoring Team 
+				- IT Security Team 			
+				
+			- ALM - Application LifeCycle Management Tool - Jira/AzBoard 
+			
+			-> Onboard Applications to DevOps :
+			
+				-> Detailed DevOps Assessment!
+				
+					- Recommendations --> 
+					
+			
+		--> Identify the Enviroments :::
+		
+			Non-Prod Enviroment					Prod Enviroments
+			
+				- Dev 
+				
+				- Build 
+				
+				- Test 
+				
+					- QA 
+					
+					- UAT 		============>		Prod_Servers 
+				
+				
+		--> DevOps Stages :::
+			
+			- Continuous Development 
+				-> It is the capability of any development team to continuously develop the code.
+				-> In DevOps this Continuous Development Stage is used to Improve the Developers' Productivity.
+				
+				Role of Developer : 
+
+					- Understand the Design 
+					- Create the Source Code 
+					
+				Developer :
+				
+					- Create Source Code 	--> java/python
+					- Build Source Code 	--> Compile 
+					- Create Application Artifacts - Binary(*.exec/*.dll/*.war)
+					- Perform unit Testing 
+					- Promote the Changes to Test Enviroments
+					- Notify the Testing Team 
+					
+				Using DevOps :
+				
+					- Create Source Code 	--> java/python
+					- Save the source Code in the Code Repository(github)
+					
+				Automate :
+				
+					- Application Build 
+					- Create Artifacts 
+					- Automated Unit Testing 
+					- Code Promotion 
+					- Automate Notification 
+					
+				
+				Tools :
+				
+					- IDE - Integrated Development Enviroment - Eclipse based IDE - Visual Studio, Visual Studio Code, Pycharm, Anaconda IDEs 
+					- Git/Github
+					
+					Visual Studio Code.
+					GitHub Source Code Management
+			
+			- Continuous Integration :
+			
+				- It is the capability of any development team to continuously integrate the their changes to higher environment for further testing
+				
+				Automate :
+				
+					- Application Build 
+					- Create Artifacts 
+					- Automated Unit Testing 
+					- Code Promotion 
+					- Automate Notification 
+						
+				Tool: 
+					- IDE - Integrated Development Enviroment - Eclipse based IDE - Visual Studio, Visual Studio Code, Pycharm, Anaconda IDEs 
+					- Git/Github
+					
+					- Build Tools 
+					
+					- Docker / Kubernetes / Ansible 
+					
+					- Jenkins/Github-Action/Azure Pipelines
+					
+			
+			- Continuous Testing ::
+
+				- It is the capability of any testing team to continuously test the changes without waiting/impacting other changes.
+				
+				Tools :
+				
+					- Junit/TestNG/Selenium 
+					- Jenkins/Github-Action/Azure Pipelines
+				
+				
+			- Continuous Delivery/Deployment ::
+										
+				- Application Architecture ::: (DevOps Perspective)
+				
+					- Monolith Application Architecture
+						- Tightly Coupled
+						- All the dependencies are coded together  like the legacy application 
+						- It is not that easy to split this to Micro-Services.
+						- We can achieve Continuous Delivery. Not Continuous Deployment.
+					
+					- Micro-Service based Application Architecture 
+					
+						- Here the functions/Modules are loosely coupled. 
+						- Each and every function are called as Micro-Service
+						- Each Micro-Service can be independently developed, tested and Implemented to Prod.
+						- To achieve Continuous Deployment, it should be Micro-Service based Architecture.						
+						
+				- Continuous Delivery 
+					- It is a process to release to changes to Prod Enviroment, This process expects Manual approvals for Prod release.
+
+				
+						Eg,: 
+						
+							Online Banking Services : Monolith 
+							
+								-> Downtime ==> Production Release Window 
+												-> 4Hrs - 6Hrs
+												
+								-> New_Version --> Fix the Issue / Revert the changes 
+								
+					
+				- Continuous Deployment 
+					- It is a process to release to changes to Prod Enviroment, This process Never expects any Manual intervension/approvals for Prod release.
+					- Deploy the Changes to Production without any downtime using Deployment Strategies.				
+									
+				Tools :				
+				
+					- Docker/Kubernetes 
+					- Jenkins/Github-Action/Azure_Pipelines
+					- Ansible 
+				
+				
+					Eg: facebook/Netflix/amazon : Micro-Service based Application Architecture
+				
+				CI/Cd(delivery) & CI/CD(Deployment)
+				
+				
+			www.amazon.com
+				
+				
+			Sign_Up 	--> Developer1 -> Create Source Code --> Test --> promote for further testing(QA) -> Release to prod.
+			Sign_In		--> Developer2 -> Create Source Code --> Test --> promote for further testing(QA) -> Release to prod.
+			Search 		--> Developer2 -> Create Source Code --> Test --> promote for further testing(QA) -> Release to prod.
+			Add to Cart 
+			Place Order 
+			Payment 
+			Confirm Order 
+			Track 
+				
+			
+			- Continuous Monitoring ::
+			
+				- It is used to achieve Business Continuity
+				- To ensure High Availability of Production Infra-Structure and Application Services. 
+		
+		
+				- Infra-Structure 	--> Prod Servers and Resources 
+				
+				- Application Services 
+			
+		
+				- Monitoring Tools :
+				
+					- Infra-Structure Monitoring Tools :
+					
+						- Prometheus, Grafana, Dynatrace, splunk, Mlflow 
+						- AWS CloudWatch
+						
+					- Application Monitoring Tools :
+					
+						- DataDog, AppDynamics
+						
+						- Micro-Services --> Database 
+					
+					
+		SDLC: Waterfall -> AGILE -> DevOps --> MLOPs --> LLMOps --> AIOps --> GitOps --> SRE --> ITOps
+		
+		Continuous Learning! Upskill 50/50 ==> 
+		
+		
+		Tools :: DeveOps/MLOps 
+		
+		- Open-Source Tools 
+			- git/github/github-actions/jenkins/docker/kubernetes/mlflow/streamlit/fast-api
+			
+		- Managed Services :
+		
+			- AWS	- AWS Sagemaker-ai 
+				
+			- Azure - Az ML 
+			
+			- GCP 	- Google Vertix
+			
+			
+	
+		--> Pre-requisites :
+		
+		
+			--> AWS Cloud --> Create VMs 
+			
+			--> github Account 
+			
+			--> github-actions 
+			
+			--> VS Code 
+			
+			--> git 
+		
+		
+		--> Version Control System 
+		
+		--> Docker 
+		
+		--> Kubernetes
+		
+		--> MLOps Tools Stack 
+		
+		--> AWS SageMaker-ai
+
+		--> Project 
+		
+			
