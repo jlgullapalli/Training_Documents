@@ -1,0 +1,73 @@
+EC2 Dashboard
+Instance >List of servers
+Launch instance
+name of Instance -Dev-server
+ubuntu 22.04
+Instance type T2_micro - check for free type
+T3_micro - if T3micro is not available
+Key pair secure key to instance
+
+
+Authentication methods
+   type
+     password based
+     token based - cli/api
+     passwordless
+     key based - public/private
+       - if key matches it is allowedA
+       create new key pair option
+       RSA default
+       .pem file
+       create key pair
+       private key download .pem file
+       use file as authentication
+       - use ky pair for all ec2 instances
+----
+
+       upto 30 gb is free, after 30 gb you will be charged
+
+       ---
+ Launching IAM
+Select Role
+Advanced Setting >IAM role
+
+
+---
+
+750 hours per month free 
+- if more will  be charged for it
+
+- stop vms after use
+
+---
+
+in instances
+- public ip will change every time you restart the EC2
+
+---
+Connect EC2 instance
+- can connect using web browser
+- can  access from local setup using ssh
+- for mac or linux, can use terminal
+
+Connection params
+- need hostname
+- username
+- credentials(Key pair or pem file)
+
+Select instance
+- Connect
+
+Select instance
+ubuntu (username)
+Advanced public key
+
+ee .pem file in downloads folder
+dvanced ssh>public ip
+
+-------
+ssh give *.pem
+EC2 >Security Tab> port 22
+
+----
+
