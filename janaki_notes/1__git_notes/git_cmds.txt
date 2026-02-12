@@ -3,9 +3,11 @@
 Working Dir --->>>  Staging Area ----> Local Repo   ---> Remote Repo
              add                  commit             push
 
+---
 
 git add  # from working to stagin area
  -------
+
 # when untracked file seen in git status
 git add <filename>
 git add a1.py df.py
@@ -18,8 +20,10 @@ git add .
 
 
 #----
+
  git branch
  ----------
+
 git branch # * denotes current branch
 git branch -v
 git branch <branch-name>
@@ -30,7 +34,9 @@ git branch <branch-name>
 
 git switch <existing bramch>
 
+
 #----
+
 git config - one time - global
 ----------
 
@@ -46,15 +52,23 @@ git config user.email "ddd@ff.com"
 
  git checkout
  ------------
+
 git checkout <thirsty>
 git checkout master
 
 
+git cherrypick
+--------------
+
 git cherrypick <commitid1> commitid2>   # merge specific commit to target branch - not recommended
+
+
  git commit # staging area to local repo
  ----------
+
 git commit -m <CRID>: - add <filename>
 
+ 
  git clone # copy or clone remote directory to local machine
  #--------
 
@@ -72,10 +86,15 @@ or
 apt install git
 # will see git bash, git cmd, git GUI
 
+
  git init
  --------
 
 git init  # creates .git folder - to initialize local repo - default branch main
+
+
+.gitignore
+-----------
 
 .gitignore
 - first file to create
@@ -101,19 +120,29 @@ git log --oneline -2
 
 git-ls
 ------
+
 ls
 git-ls
 
+
 #----
+
  git merge
  ----------
+
 # switch to master and do git merge
 git merge thirsty
 
 #---
+
+git push
+---------
+
 git push # local repo to remote repo
 git push -u origin localfeature1
 
+git pull
+--------
 
 git pull  # remote repo to local repo and working dir
 (git pull :: git fetch _ git merge)
@@ -126,13 +155,17 @@ git pull  # remote repo to local repo and working dir
 
 git rebase <branchname>
 
-Unstage
+
+Unstage - git rm
 -------
 
 git rm --cached file.txt # remove changes from staging area and add back to working directory
 
 git rm -f f2.txt # remove from git, current directory and local repo
 
+
+git reset
+---------
 
 git reset  # undo changes - does not put a commit message in git status - not recommended
 
@@ -144,6 +177,9 @@ git reset <options - soft/mixed/hard> <previous-commitid>
 git revert
 - will create a commit id
 - recommended
+
+git remote
+-----------
 
 git remote -v # list the remote repositories that are hooked to the local repo
 
@@ -165,10 +201,22 @@ git status
 
 git status
 
+
+
+git squash
+-----------
+
 git squash # used to make multiple commits to one commit 
+
+
+
+git show
+--------
 
 git show
 git show fggfdd
+
+
 
 git stash
 ---------
@@ -193,6 +241,8 @@ git stash pop
     - cleanup entire stash list
 
 #----
+git version
+-----------
 
 git --version
 
