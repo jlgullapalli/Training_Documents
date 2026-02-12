@@ -1,4 +1,96 @@
 
-cod.visualstudio.com/downloads
+code.visualstudio.com/downloads
 download and install
 
+Python for ai
+
+python.datalumina.com
+
+Download python in windows
+python.org/downloads
+See file in downloads folder
+double click
+select add to path and finish with default values
+python --version
+
+
+Install vscode
+codevisualstudio.com
+Select 
+✓ Add “Open with Code” action to Windows Explorer file context menu
+✓ Add “Open with Code” action to Windows Explorer directory context menu
+✓ Register Code as an editor for supported file types
+✓ Add to PATH
+
+Click Next and Finish
+
+
+Extensions>python install
+Settings>Search for Python Terminal Execute In File Dir”
+Select the option
+
+
+Extensions>pylance install
+
+Extensions>jupyter install
+
+Install “Atom One Dark Theme”
+Install Material Icon
+Settings>Tree Indentation 20
+
+ctrl-shift-p 
+type Python select Interpreter
+select the latest
+
+Create folder
+Click Save Workspace
+will save as python-for-ai.code-workspace
+
+Enter program
+Click Play button (right click >Run) or ctl-f5
+
+right bottom of screen see python 3.x.x.
+Click on it
+See select Python Interpreter
+Select the latest
+
+
+coourse-resource
+
+
+
+
+Ctrl-shift -P
+PythonCreate env
+See venv ot conda
+Select venv
+creates a .venv file
+see in bottom right .venv
+or
+python -m venv .venv
+
+Activate
+ctrl-shift-p
+select the .vnv version
+or close and open terminal again
+
+
+Python packages
+pip install packages
+terminal
+
+
+stopped at 42 mins
+
+Run following on vs code terminal and activate
+ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+ activate
+
+Interactive python
+    pip install ipykernel
+    Setting> Jupyter>Interactive window>Text Editor>Execute Selection
+    Select when enter shift enter 
+    click x
+
+
+    having issue with venv in visual studio code- stopped at 54:04 in video
