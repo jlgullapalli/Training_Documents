@@ -1,0 +1,32 @@
+Create IAM User
+---------------
+
+Open AWS Console
+MFA>IAM User (Top right) - change zone
+
+MLOps Admin
+Custom password
+
+Console home
+Search bar>IAM users>Create User
+Username
+Custom password> change password
+Set permission
+Attach file
+Admistrative access
+Click Next.
+Clieck create user
+
+
+Console url
+username
+password
+save
+
+use custom url
+signin
+accountid
+
+
+
+

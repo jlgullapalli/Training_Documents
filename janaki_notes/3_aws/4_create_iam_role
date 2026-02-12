@@ -1,0 +1,14 @@
+Create IAM Role
+----------------
+
+Opem AWS console
+search for IAM
+
+Create Role
+AWS service
+EC2 >use case Click next
+need full accessfor S3
+Click Next
+Role name - create role
+
+See new role created

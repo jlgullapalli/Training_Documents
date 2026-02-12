@@ -1,0 +1,79 @@
+Search bar>S3 dashboard
+Click Create bucket
+- all files and folders are saved as buckets
+s3 bucket is a directory
+Files - Keys/Objects
+
+
+Access to create a S3 bucket
+IAM user with admin access
+-- EC2 Instance - means a virtual machine
+
+launch an ec2 instance
+Development and build >github action
+
+
+How to create S3 buckets
+------------------------
+
+Create bucket
+Options>General Purpose
+bucket name: edu-mlops-020-bkt
+choose bucket
+ACL disable
+block public access to -disable
+- cn access from internet
+
+bucket versioning enable
+i
+default encryption
+bucket key - enable
+bucket name - leave default
+block
+remove checkbox
+---
+
+AWS >root or IAM user
+
+---
+
+Navigate to bucket
+meta data
+  permissions >Customize access - can make it
+  bucket policy edit bucket ARN
+
+  IAM policy and create permission
+
+    version
+    statement
+        id
+	effect allow
+	principal
+	action>Full access
+	Resource bucket name
+
+
+	---
+
+	Prepare S3 bucket
+	set policy
+	Click upload button
+	Click add files
+	index.html - upload close
+	see file uploaded
+
+	object you create has a url
+	copy url
+	if url is used in web
+	Edit and block public access >cannot use url
+
+	Object section
+	go to bucket
+	upload button
+	add files
+	select file
+	click upload
+
+----
+
+Create IAM role - used to give permission for EC2 instance to access S3 bucket

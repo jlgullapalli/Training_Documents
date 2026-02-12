@@ -1,27 +1,59 @@
- git add  # from working to stagin area
- -------
 
+
+Working Dir --->>>  Staging Area ----> Local Repo   ---> Remote Repo
+             add                  commit             push
+
+
+git add  # from working to stagin area
+ -------
+# when untracked file seen in git status
 git add <filename>
+git add a1.py df.py
+git add q1.java st.txt
+git add *.java a2.py
+
+# add all files
+git add .
+
 
 
 #----
  git branch
  ----------
-git branch
+git branch # * denotes current branch
 git branch -v
 git branch <branch-name>
+ - will stay in same branch
+
+ git switch -c <new branch>
+ - will create a branch and switch to that branch
+
+git switch <existing bramch>
 
 #----
+git config - one time - global
+----------
 
+git config --global user.name "jjj"
+git config --global user.email "ddd@ff.com"
+
+
+git config - one time - local
+----------
+
+git config user.name "jjj"
+git config user.email "ddd@ff.com"
 
  git checkout
  ------------
 git checkout <thirsty>
 git checkout master
 
+
+git cherrypick <commitid1> commitid2>   # merge specific commit to target branch - not recommended
  git commit # staging area to local repo
  ----------
-git commit -m <filename>
+git commit -m <CRID>: - add <filename>
 
  git clone # copy or clone remote directory to local machine
  #--------
@@ -29,11 +61,30 @@ git commit -m <filename>
 # git fetch # remote repo to local repo
 do git merge to get to working dir
 
+fork from github # to copy from one remote repo to another repo (must be public)
+
 #----
+
+# install git client
+git-scm.com/install/windows
+
+or
+apt install git
+# will see git bash, git cmd, git GUI
+
  git init
  --------
 
-git init  # creates .git folder
+git init  # creates .git folder - to initialize local repo - default branch main
+
+.gitignore
+- first file to create
+*.war
+*.jar
+dataset/
+
+secret file
+db files
 
 #----
 
@@ -42,14 +93,27 @@ git init  # creates .git folder
 
 git log
 
+git log --oneline
+git log -3
+git log --oneline -2
+- shows 2 latest commits in oneline format
+
+
+git-ls
+------
+ls
+git-ls
+
 #----
  git merge
  ----------
-
+# switch to master and do git merge
 git merge thirsty
 
 #---
 git push # local repo to remote repo
+git push -u origin localfeature1
+
 
 git pull  # remote repo to local repo and working dir
 (git pull :: git fetch _ git merge)
@@ -62,6 +126,73 @@ git pull  # remote repo to local repo and working dir
 
 git rebase <branchname>
 
+Unstage
+-------
+
+git rm --cached file.txt # remove changes from staging area and add back to working directory
+
+git rm -f f2.txt # remove from git, current directory and local repo
+
+
+git reset  # undo changes - does not put a commit message in git status - not recommended
+
+git reset soft  # repo to staging area
+git reset mixed  # repo to working directory
+git reset hard  # permanently delete all files
+
+git reset <options - soft/mixed/hard> <previous-commitid>
+git revert
+- will create a commit id
+- recommended
+
+git remote -v # list the remote repositories that are hooked to the local repo
+
+git remote remove origin
+git remote -v
+git remote add origin https://....
+
+git remote add origin2 main
+
+git push -u origin2 main
+
+
+
+
 #----
 
+git status
+----------
+
+git status
+
+git squash # used to make multiple commits to one commit 
+
+git show
+git show fggfdd
+
+git stash
+---------
+git stash
+- used to maintain uncommitted changes to temporary area
+- should not leave untracked files before switching - otherwise they will be seen in new stitched branch
+
+git stash list
+
+git stash save
+
+git stash apply
+git stash drop
+  - delete
+
+git stash pop
+  - apply and delete
+
+  git stash pop stash@{3}
+
+  git stash clear
+    - cleanup entire stash list
+
+#----
+
+git --version
 
