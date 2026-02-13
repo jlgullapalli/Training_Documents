@@ -1,0 +1,29 @@
+  Push
+  ---
+
+  git push -u origin feature1
+    - cannot push without credentials (or fetch)
+    - setup pap token based auth
+    - uses credential manager
+    - u stands for use credentials from github
+
+    - different types of auth
+        - token based auth
+	- password based auth 
+
+  
+
+
+   For an ML project
+     multiple repos are there
+     - example
+         AZRepo
+	 AWS Cloud (github
+
+	 in that case multiple origins are defined
+	  
+	  git remote -v
+	  git remote add origin2 <https...>
+	  git remote -v
+	  	- see origin/origin2
+
