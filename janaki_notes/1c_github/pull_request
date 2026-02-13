@@ -22,3 +22,15 @@ Pull request done by developers
 See pull request successfully merged
 
 Click Delete Repository after the feature branch is merged
+
+---
+
+After merging, if you check in main in local machine, still do not see the changes
+need to a git pull/fetch to get the latest changes
+
+---
+
+
+rebase is done in local repo, if the main branch is out of sync with main branch
+
+pull/fetch is done if main in remote repo is out of sync with with feature branch 

@@ -19,3 +19,17 @@ Click Create Repository
 
 Developers should not update main branch directly
 
+-----
+New Project
+github >create repo
+git clone url
+git init
+git stauts
+ - see untrusted files
+ git add .
+ git commit -m <comment>
+ git remote add <origin>
+ git push
+   - after adding PAP
+
+

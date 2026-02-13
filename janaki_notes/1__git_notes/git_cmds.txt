@@ -233,7 +233,7 @@ git stash drop
   - delete
 
 git stash pop
-  - apply and delete
+  - apply and drop
 
   git stash pop stash@{3}
 

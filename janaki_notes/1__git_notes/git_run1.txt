@@ -197,3 +197,11 @@ To https://github.com/jlgullapalli/TestRemoteRepo1.git
 Branch 'localfeature1' set up to track remote branch 'localfeature1' from 'origin'.
 
 jlgul@DESKTOP-U9LEJ0E MINGW64 ~/Edu_MLOps_Feb2026_projects/TestRemoteRepo1 (localfeature1)
+
+---
+
+remote Repos
+github - DVCS
+gitlab - DVCS
+azRepo - managed services
+AWS code commit - not supported going forward
