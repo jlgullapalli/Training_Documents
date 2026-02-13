@@ -5,3 +5,17 @@ git commit -m <message>
 # set pap in github
 git remote add origin https://...
 git push -u origin main
+
+---
+
+Create a new repo
+Repo Name TestRemoteRepo
+Private
+add Readme file
+add .gitignor python
+Click Create Repository
+  - creates main branch
+  - creates readme and .gitignore
+
+Developers should not update main branch directly
+

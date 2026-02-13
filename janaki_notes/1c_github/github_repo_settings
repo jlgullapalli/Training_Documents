@@ -1,0 +1,17 @@
+Git Repo Settings
+- rename repo
+- can make other branch as default branch
+
+The following are used in CI/CD
+ - branches
+ Ruleset
+ webhooks
+ Actions>Runners
+   - self managed runners
+   - github hosted runners
+
+ pull request
+ squashing
+ Danger zone
+   - change public/private etc
+ 

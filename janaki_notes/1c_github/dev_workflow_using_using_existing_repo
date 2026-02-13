@@ -1,5 +1,37 @@
+Existing repo
+--------------
 git clone
 git push
 git fetch
 git pull
+
+git clone
+switch branch to feature1
+dd/commit a file
+go to main branch, do not see new file
+change to feature1 branch, see one commit ahead of main
+
+
+------------
+
+use 
+git clone <url>
+get url from code>https><url>
+- public - credential not needed
+- private - credentials needed
+
+ls
+cd TestRepo
+ - see 2 files
+git status
+git remote -v 
+ - see 2 lines for origin, one for fetch and one for pull
+
+git log
+- see some commits
+- see HEAD and main
+
+---
+
+
 

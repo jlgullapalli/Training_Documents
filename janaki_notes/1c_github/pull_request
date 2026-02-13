@@ -1,0 +1,24 @@
+Pull
+----
+
+Pull Request>Compare and pull request
+ - add title
+  eg REL02024 Updated Test
+ - add Description
+    - files changed, functions changed, tests covered, impacts it will cause, impact in main branch
+    - select reviewers, add name it will show email address
+    - assignee - who will fix it
+    - fill all the details
+    - labels (ALM details from Jira etc)
+    - will show if merge has conflict. If there is conflict(red color will be seen),  it needs to be resolved
+
+    and click Create Pull request
+
+
+    Click Merge pull request
+    Click Confirm merge 
+
+Pull request done by developers
+See pull request successfully merged
+
+Click Delete Repository after the feature branch is merged

@@ -1,0 +1,31 @@
+Devops 
+  - creates the repo
+  - give access to developer to create  branch if needed
+  - individual user access
+  - use SA - PAT repository - for collaboration with team
+     - used for CICD
+
+Devops also does the rename repo . Developer should not do rename repo
+
+
+Create a new branch
+  git switch -c <new_branch>
+  git log --oneline
+
+  echo "rec1" >>localfile
+  git add .
+  git commit -m <comment>
+
+  git push -u origin feature1
+    - cannot push without credentials (or fetch)
+    - setup pap token based auth
+    - uses credential manager
+    - u stands for use credentials from github
+
+    - different types of auth
+        - token based auth
+	- password based auth 
+
+  
+
+

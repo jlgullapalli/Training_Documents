@@ -1,2 +1,12 @@
-Git user setting (not repo settings)>Developer Setting>PAP>Tokens>Generate Tokens
+Git user>setting (not repo settings)
+Note: edu-janaki-token2
+Click Developer Setting>Personal Acces Token
+Click Tokens(Classic)>Generate New Token>Generate New Token(Classic)
+See Confirm Access popup
+Enter Password and click Confirm
+Set expiration > 90 days
+Select 
+  - repo
+  - workflow
+Click Generate token
 
